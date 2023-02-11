@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "Exctracting toolchain.."
-
-tar -xf /opt/toolchain.tar.gz .
 
 echo "Installing required development tools..."
 apt-get update -y
