@@ -1,8 +1,15 @@
 # action.yml
 name: "Skylark PRO toolchain"
 description: "Toolchain"
- 
+inputs:
+  src-dir: 
+    description: 'Source directory'
+    required: false
+    default: "."
+outputs:
+  build-dir: 
+    description: "Build directory"
+    value: "build"
 runs:
-  using: "docker"
-  image: "Dockerfile"
- 
+using: "docker"
+image: "Dockerfile"
