@@ -1,0 +1,19 @@
+# action.yml
+name: "Skylark PRO application (.sqfs)"
+description: "Builds a new sqfs file from the given rootfs"
+inputs:
+  varenummer: # Varenummer fra NAV, xxx.yyy.zzz.r
+    description: "Varenummer fra NAV"
+    required: true
+  rootfs: 
+    description: "rootfs"
+    required: true
+outputs:
+  sqfs_file: # sqfs file
+    description: "This is the file, that is generated"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.varenummer }}
+    - ${{ inputs.rootfs }}

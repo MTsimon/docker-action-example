@@ -1,0 +1,9 @@
+{
+  "name": "Ubuntu",
+  "forwardPorts": [
+    3000
+  ],
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
