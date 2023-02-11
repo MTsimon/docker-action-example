@@ -1,12 +1,8 @@
 # action.yml
 name: "Skylark PRO toolchain"
 description: "Toolchain"
-inputs:
-
-outputs:
-  
+ 
 runs:
   using: "docker"
   image: "Dockerfile"
  
-   
